@@ -796,3 +796,39 @@ if (presetIndBtn && presetBusBtn && jsonInputArea && btnRunResolution && btnRese
     // Initialize Sandbox on Load
     loadPreset('individual');
 }
+
+// --- Lightweight Visitor Analytics (Netlify Form Integration) ---
+async function recordVisitorAnalytics() {
+    // Only track once per browser session to save Netlify Form submission quotas
+    if (sessionStorage.getItem('kmh_visitor_tracked')) {
+        return;
+    }
+
+    try {
+        const res = await fetch('https://ipapi.co/json/');
+        if (!res.ok) return;
+        const data = await res.json();
+
+        const formData = new URLSearchParams();
+        formData.append('form-name', 'visitor-analytics');
+        formData.append('ip', data.ip || 'Unknown');
+        formData.append('country', data.country_name || 'Unknown');
+        formData.append('city', data.city || 'Unknown');
+        formData.append('isp', data.org || 'Unknown');
+        formData.append('browser', navigator.userAgent || 'Unknown');
+        formData.append('referrer', document.referrer || 'Direct');
+
+        // Send to Netlify Form Endpoint
+        await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: formData.toString()
+        });
+
+        sessionStorage.setItem('kmh_visitor_tracked', 'true');
+    } catch (err) {
+        console.warn("Analytics tracking skipped:", err.message);
+    }
+}
+
+window.addEventListener('load', recordVisitorAnalytics);

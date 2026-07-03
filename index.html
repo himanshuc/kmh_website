@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics (GA4) - Uncomment and replace G-XXXXXXXXXX with your actual tracking ID -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
 </head>
 <body>
     <!-- Top Decorative Gradient Bar -->
@@ -476,6 +486,17 @@
             <button class="btn-close-modal" id="btn-close-modal">Back to Website</button>
         </div>
     </div>
+
+    <!-- Hidden Form for Free Netlify-Based Visitor Analytics -->
+    <form name="visitor-analytics" data-netlify="true" hidden>
+        <input type="hidden" name="form-name" value="visitor-analytics">
+        <input type="hidden" name="ip">
+        <input type="hidden" name="country">
+        <input type="hidden" name="city">
+        <input type="hidden" name="isp">
+        <input type="hidden" name="browser">
+        <input type="hidden" name="referrer">
+    </form>
 
     <!-- Script Imports -->
     <script src="app.js"></script>
