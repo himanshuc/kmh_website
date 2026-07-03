@@ -24,21 +24,42 @@ if (inquiryForm) {
     inquiryForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Simple visual feedback for submission
         const submitBtn = document.getElementById('btn-submit-inquiry');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Submitting...';
         submitBtn.disabled = true;
 
-        setTimeout(() => {
-            // Show Success Modal
+        const name = document.getElementById('form-name').value;
+        const email = document.getElementById('form-email').value;
+        const org = document.getElementById('form-org').value;
+        const service = document.getElementById('form-service').value;
+        const msg = document.getElementById('form-msg').value;
+
+        const formData = new URLSearchParams();
+        formData.append('form-name', 'inquiry-form');
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('organization', org);
+        formData.append('challenge', service);
+        formData.append('message', msg);
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: formData.toString()
+        })
+        .then(() => {
             successModal.classList.add('active');
-            
-            // Reset button and form
+            inquiryForm.reset();
+        })
+        .catch((err) => {
+            console.error("Inquiry submit error:", err);
+            alert("There was an issue submitting your inquiry. Please try again or email us directly at info@kmhdata.com.");
+        })
+        .finally(() => {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-            inquiryForm.reset();
-        }, 1200);
+        });
     });
 }
 
