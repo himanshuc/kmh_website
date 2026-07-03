@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KMH Data Management & Consultants - Subject Matter Experts in Entity Resolution and Master Data Management solutions. We deliver bespoke data architecture, custom software engines, and strategic consultancy.">
+    <title>KMH Data Management & Consultants | Entity Resolution & MDM Experts</title>
+    <!-- Outfit & Inter Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Decorative Gradient Bar -->
+    <div class="top-gradient-bar"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="brand-logo" id="brand-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="4" fill="url(#brand-grad-cyan)"/>
+                    <circle cx="24" cy="8" r="4" fill="url(#brand-grad-purple)"/>
+                    <circle cx="16" cy="24" r="5" fill="url(#brand-grad-blue)"/>
+                    <path d="M8 8L16 24M24 8L16 24M8 8H24" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <defs>
+                        <linearGradient id="brand-grad-cyan" x1="4" y1="4" x2="12" y2="12" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00f2fe"/>
+                            <stop offset="1" stop-color="#4facfe"/>
+                        </linearGradient>
+                        <linearGradient id="brand-grad-purple" x1="20" y1="4" x2="28" y2="12" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#f355a0"/>
+                            <stop offset="1" stop-color="#7000ff"/>
+                        </linearGradient>
+                        <linearGradient id="brand-grad-blue" x1="11" y1="19" x2="21" y2="29" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#3b82f6"/>
+                            <stop offset="1" stop-color="#1d4ed8"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-title">KMH</span>
+                    <span class="logo-subtitle">Data Management & Consultants</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#expertise" class="nav-link">Expertise</a>
+                <a href="#sandbox" class="nav-link">ER Sandbox</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#framework" class="nav-link">Framework</a>
+                <a href="#contact" class="nav-btn">Inquire Now</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-background-effects">
+            <div class="bg-glow glow-cyan"></div>
+            <div class="bg-glow glow-purple"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-dot"></span> Subject Matter Experts in Entity Resolution
+            </div>
+            <h1 class="hero-title animate-slide-up">
+                Architecting Golden Records. <br>
+                <span class="gradient-text">Scaling Master Data.</span>
+            </h1>
+            <p class="hero-description animate-slide-up-delayed">
+                With a proven track record of delivering bespoke data consulting to major financial institutions in Canada, the US, and Europe, our team of expert architects has recently launched our dedicated, enterprise-grade Entity Resolution product to automate golden record creation at scale.
+            </p>
+            <div class="hero-ctas animate-slide-up-delayed-more">
+                <a href="#sandbox" class="cta-primary">Try the ER Sandbox</a>
+                <a href="#contact" class="cta-secondary">Get Architecture Audit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core SME Expertise Section (Our Methodology) -->
+    <section class="expertise-section" id="expertise">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tagline">OUR METHODOLOGY</span>
+                <h2 class="section-title">End-to-End Reference Data Architecture</h2>
+                <p class="section-subtitle">We design and integrate standard, scalable processes to normalize, link, and master enterprise records.</p>
+            </div>
+
+            <div class="expertise-grid">
+                <!-- Step 1: Pipeline & Ingestion -->
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="step-num">STAGE 01</div>
+                    <h3 class="card-title">Data Pipeline & Ingestion</h3>
+                    <p class="card-description">
+                        Setup high-throughput batch and streaming connections to ingest raw, unstructured, and messy customer or transaction records directly into a unified cloud Data Lake.
+                    </p>
+                    <ul class="card-bullets">
+                        <li>Legacy & CRM database connectors</li>
+                        <li>JSON, CSV, & XML schema-on-read parsing</li>
+                        <li>High-scale streaming (Apache Kafka)</li>
+                        <li>Decoupled cloud storage target staging</li>
+                    </ul>
+                </div>
+
+                <!-- Step 2: Cleansing & Deduplication -->
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="step-num">STAGE 02</div>
+                    <h3 class="card-title">Data Cleansing & Deduplication</h3>
+                    <p class="card-description">
+                        Normalize record attributes, standardize formats, and resolve global addresses using bespoke and custom parsers (incorporating NLP-based splitting) to significantly improve resolution accuracy.
+                    </p>
+                    <ul class="card-bullets">
+                        <li>Bespoke global address parsing models</li>
+                        <li>Phone, email, and postal code standardizations</li>
+                        <li>Date validation & ISO standard formatting</li>
+                        <li>Exact-match primary key deduplication</li>
+                    </ul>
+                </div>
+
+                <!-- Step 3: Entity Resolution -->
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        </svg>
+                    </div>
+                    <div class="step-num">STAGE 03</div>
+                    <h3 class="card-title">Entity Resolution</h3>
+                    <p class="card-description">
+                        Link records across disjointed systems to power KYC, AML, MDM, and Fraud detection. We ingest and resolve third-party provider registries (like D&B and S&P) with your internal customer data, enriching golden records with critical external context.
+                    </p>
+                    <ul class="card-bullets">
+                        <li>KYC, AML, and Fraud detection schemas</li>
+                        <li>D&B and S&P third-party data resolution</li>
+                        <li>Jaro-Winkler & Levenshtein similarity scoring</li>
+                        <li>Graph-based linkage & cluster analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Step 5: Master Data Management -->
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="step-num">STAGE 05</div>
+                    <h3 class="card-title">Master Data Management (MDM)</h3>
+                    <p class="card-description">
+                        Establish the central golden record registry, define attribute survivorship rules, and set up bi-directional synchronization to distribute master records.
+                    </p>
+                    <ul class="card-bullets">
+                        <li>Golden Record registries and survivorship</li>
+                        <li>Operational database sync & replication loops</li>
+                        <li>Active Data Governance & Stewardship hubs</li>
+                        <li>Multi-domain master hubs (Customer, Product)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Entity Resolution Sandbox -->
+    <section class="sandbox-section" id="sandbox">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tagline">LIVE DEMO</span>
+                <h2 class="section-title">Interactive ER Sandbox</h2>
+                <p class="section-subtitle">See how our Entity Resolution framework ingests, standardizes, resolves keys, and builds Golden Records in real-time.</p>
+            </div>
+
+            <div class="sandbox-wrapper">
+                <!-- Sandbox Controls -->
+                <div class="sandbox-controls">
+                    <h4 class="controls-title">1. Select Preset Data</h4>
+                    <div class="preset-buttons">
+                        <button class="preset-btn active" id="preset-ind">Individual Records</button>
+                        <button class="preset-btn" id="preset-bus">Business Records</button>
+                    </div>
+                    
+                    <div class="custom-input-area">
+                        <h4 class="controls-title">Or Edit Source Records</h4>
+                        <div class="records-editor-container">
+                            <textarea id="records-json-input" aria-label="JSON input records" spellcheck="false"></textarea>
+                        </div>
+                        <div class="control-actions">
+                            <button class="btn-run" id="btn-run-resolution">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Run Engine
+                            </button>
+                            <button class="btn-reset" id="btn-reset-demo">Reset</button>
+                        </div>
+                    </div>
+
+                    <div class="blocking-keys-display">
+                        <h4 class="controls-title">Configured Blocking Keys</h4>
+                        <div class="key-tags" id="blocking-key-tags">
+                            <!-- Populated dynamically by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandbox Pipeline Visualization -->
+                <div class="sandbox-visualization">
+                    <!-- Column 1: Ingested & Cleansed -->
+                    <div class="vis-column">
+                        <div class="column-header">
+                            <span class="column-step">Step 1</span>
+                            <h3>Cleansing & Normalization</h3>
+                        </div>
+                        <div class="column-body" id="col-cleansed">
+                            <!-- Cards populated dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Key Blocking & Linkage -->
+                    <div class="vis-column">
+                        <div class="column-header">
+                            <span class="column-step">Step 2</span>
+                            <h3>Key Clustering</h3>
+                        </div>
+                        <div class="column-body" id="col-clusters">
+                            <!-- Clusters populated dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Golden Records -->
+                    <div class="vis-column">
+                        <div class="column-header">
+                            <span class="column-step">Step 3</span>
+                            <h3>Golden Records</h3>
+                        </div>
+                        <div class="column-body" id="col-golden">
+                            <!-- Golden records populated dynamically by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tagline">WHAT WE PROVIDE</span>
+                <h2 class="section-title">Bespoke Products & Enterprise Consultancy</h2>
+                <p class="section-subtitle">Leveraging years of experience serving large financial institutions in Canada, the US, and Europe, we combine a dedicated core product with bespoke consulting solutions.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-box">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">Dedicated Core Product</h3>
+                    <p class="service-text">
+                        We have recently launched our dedicated, enterprise-grade Entity Resolution and Master Data Management product. Engineered for high compliance, it can be deployed directly onto your on-premise compute or standard cloud infrastructures (AWS, GCP, Databricks, Snowflake). Your sensitive data stays within your firewall and never leaves your secure premise.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-box">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">Bespoke Financial Consulting</h3>
+                    <p class="service-text">
+                        We provide custom, high-security data consulting services to major financial institutions across Canada, the US, and Europe. Our specialists audit legacy pipelines, layout target data lake models, and design systems complying with strict regulatory rules.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-box">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">Architecture & support</h3>
+                    <p class="service-text">
+                        From lakehouse setups (Delta Lake, Snowflake) to streaming deployments (Kafka, Flink), we construct custom pipelines and offer ongoing SLAs, data quality monitoring, and troubleshooting support for operational peace of mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation Framework (Reference Document Preview) -->
+    <section class="framework-section" id="framework">
+        <div class="section-container">
+            <div class="framework-glass-card">
+                <div class="framework-content">
+                    <span class="framework-tag">TECHNICAL WHITEPAPER</span>
+                    <h2 class="framework-title">KMH ER & MDM Implementation Framework</h2>
+                    <p class="framework-desc">
+                        Explore our enterprise reference architecture and implementation framework. This document reviews cleaning protocols, blocking methods, Jaro-Winkler scoring mechanics, and multi-source survivorship models.
+                    </p>
+                    <div class="framework-actions">
+                        <button class="btn-framework-view" id="btn-toggle-framework-doc">Read Framework Document</button>
+                        <a href="KMH_ER_MDM_Implementation_Framework.md" target="_blank" class="btn-framework-download">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            View Source Markdown
+                        </a>
+                    </div>
+                </div>
+                <div class="framework-preview-graphic">
+                    <div class="graphic-node node-a">Ingestion</div>
+                    <div class="graphic-line line-ab"></div>
+                    <div class="graphic-node node-b">Resolution Engine</div>
+                    <div class="graphic-line line-bc"></div>
+                    <div class="graphic-node node-c">Golden Hub</div>
+                    
+                    <div class="graphic-details">
+                        <div class="detail-row"><span>Ingested:</span> 120,402 records</div>
+                        <div class="detail-row"><span>Matching Pairs:</span> 84,204 links</div>
+                        <div class="detail-row"><span>Resolved Entities:</span> 36,198 golden</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expandable Document Viewer -->
+            <div class="framework-doc-viewer" id="framework-doc-viewer">
+                <div class="doc-viewer-header">
+                    <span class="doc-title">KMH_ER_MDM_Implementation_Framework.md</span>
+                    <button class="btn-close-viewer" id="btn-close-framework-doc">&times;</button>
+                </div>
+                <div class="doc-viewer-content" id="framework-doc-content">
+                    <!-- Loaded dynamically via JavaScript to keep it clean -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Form -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tagline">GET IN TOUCH</span>
+                    <h2 class="section-title">Schedule an Architectural Alignment</h2>
+                    <p class="contact-desc">
+                        Need tailored data management software or guidance on your pipeline design? Connect with a KMH consultant. We will assess your stack and outline a high-performance resolution strategy.
+                    </p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email Enquiries</h4>
+                                <p>info@kmhdata.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Headquarters</h4>
+                                <p>Burlington, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="inquiry-form" class="inquiry-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name *</label>
+                                <input type="text" id="form-name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Work Email *</label>
+                                <input type="email" id="form-email" required placeholder="john.doe@company.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-org">Organization Name</label>
+                            <input type="text" id="form-org" placeholder="Acme Corporation">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-service">Primary Challenge *</label>
+                            <select id="form-service" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="er">Entity Resolution & Deduplication</option>
+                                <option value="mdm">Master Data Management (MDM) Setup</option>
+                                <option value="arch">Custom Data Pipeline Architecture</option>
+                                <option value="consult">Support & General Consultancy</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-msg">Project Details / Message</label>
+                            <textarea id="form-msg" placeholder="Describe your data systems, typical volume of records, and project timelines..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="btn-submit-inquiry">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-title">KMH</span>
+                </div>
+                <p>Bespoke products, high-throughput pipelines, and architectures designed for clean corporate intelligence.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Solutions</h4>
+                <a href="#expertise">Entity Resolution</a>
+                <a href="#expertise">Master Data Management</a>
+                <a href="#services">Architecture Audit</a>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="#services">Our Services</a>
+                <a href="#framework">Reference Framework</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 KMH Data Management and Consultants. All rights reserved. SME in MDM and Entity Linkage.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal Pop-up -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="success-modal-card">
+            <div class="success-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h3>Inquiry Submitted Successfully</h3>
+            <p>Thank you for reaching out to KMH. An architectural consultant will review your challenge and reply within 1 business day.</p>
+            <button class="btn-close-modal" id="btn-close-modal">Back to Website</button>
+        </div>
+    </div>
+
+    <!-- Script Imports -->
+    <script src="app.js"></script>
+</body>
+</html>
